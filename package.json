@@ -1,0 +1,13 @@
+{
+  "name": "haisic-crm-netlify",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check": "node --check netlify/functions/login.mjs && node --check netlify/functions/session.mjs && node --check netlify/functions/logout.mjs && node --check netlify/functions/whatsapp.mjs",
+    "hash-password": "node scripts/hash-password.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
